@@ -8,40 +8,26 @@ Genrates Adept URLs.
 
 #### Usage
 
-
     var adept = require('adept');
-
 
     // Setup Adept
     var settings = {
-        "default_bucket": "xxxxxxxxxxxxxxxxxx",
-        "cloudfront_hostname": "xxxxxxxxxxxxxxxxxx",
-        "adept_account_id": "xxxxxxxxxxxxxxxxxx",
+        "default_bucket": "xxxxxxxxx",
+        "cloudfront_hostname": "xxxxxxxxx",
+        "adept_account_id": "xxxxxxxxx",
         "adept_account_key": "xxxxxxxxxxxxxxxxxx"
     };
-
 
     // Initialize adept
     var a = adept(settings)
 
-
-    // 1. Setup operations and URL for image to manipulate
+    // Setup operations and URL for image to manipulate
     var params = {
-        "operations": ['xxxxxx', 'xxxxxx'],
-        "image_url": 'xxxxxx'
+        "bucket": "xxxxxxxxx",
+        "operations": ['maxwidth-100'],
+        "asset_key": 'xxxxxxxxxxxxxxxxxx.jpeg'
     };
 
-    // Generate the Adept URL by image URL
-    var url = a.generateAdeptUrl(params);
-
-
-    // 2. Setup operations, image key, and bucket containing the image:
-    var params = {
-        "bucket": "xxxxxx"
-        "operations": ['xxxxxx', 'xxxxxx'],
-        "image_url": 'xxxxxx'
-    };
-
-    // Generate the Adept URL by image key and bucket
+    // Generate the Adept URL
     var url = a.generateAdeptUrl(params);
 
