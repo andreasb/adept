@@ -9,7 +9,7 @@
   },
   "main": "index.js",
   "dependencies": {
-    "crypto": ">= 1.2.32"
+    "crypto": ">= 0.0.3"
   },
   "author": {
     "name": "Andreas Birkebæk",
