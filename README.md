@@ -10,7 +10,7 @@ Genrates Adept URLs.
 
     var adept = require('adept');
 
-    // Setup Adept
+    // Setup Adept settings
     var settings = {
         "default_bucket": "xxxxxxxxx",
         "cloudfront_hostname": "xxxxxxxxx",
@@ -18,10 +18,10 @@ Genrates Adept URLs.
         "adept_account_key": "xxxxxxxxxxxxxxxxxx"
     };
 
-    // Initialize adept
+    // Initialize Adept
     var a = adept(settings)
 
-    // Setup operations and URL for image to manipulate
+    // Setup params for image to modify
     var params = {
         "bucket": "xxxxxxxxx",
         "operations": ['maxwidth-100'],
