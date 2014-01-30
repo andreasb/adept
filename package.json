@@ -1,0 +1,11 @@
+{
+  "name": "adept",
+  "version": "0.0.1",
+  "description": "Generates Adept URLs.",
+  "main": "index.js",
+  "dependencies": {
+    "crypto": ">= 1.2.32"
+  },
+  "author": "Andreas Birkebæk",
+  "license": "BSD"
+}
