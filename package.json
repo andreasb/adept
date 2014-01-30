@@ -2,10 +2,22 @@
   "name": "adept",
   "version": "0.0.1",
   "description": "Generates Adept URLs.",
+  "keywords": ["adept", "image", "resizing", "graphics"],
+  "bugs": {
+        "url": "https://github.com/andreasb/adept/issues",
+        "email": "andreas@fictivekin.com"
+  },
   "main": "index.js",
   "dependencies": {
     "crypto": ">= 1.2.32"
   },
-  "author": "Andreas Birkebæk",
+  "author": {
+    "name": "Andreas Birkebæk",
+    "email": "andreas@fictivekin.com"
+  },
+  "respository": {
+    "type": "git",
+    "url": "https://github.com/andreasb/adept.git"
+  },
   "license": "BSD"
 }
