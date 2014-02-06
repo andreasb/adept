@@ -24,7 +24,7 @@ var a = adept(settings)
 
 // Setup params for image to modify
 var params = {
-    "bucket": "xxxxxxxxx",  // if not passed, the default_bucket is used
+    "bucket": "xxxxxxxxx",  // if not passed the default_bucket is used
     "operations": ['maxwidth-100'],
     "asset_key": 'xxxxxxxxxxxxxxxxxx.jpeg'
 };
