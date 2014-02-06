@@ -1,6 +1,6 @@
 {
   "name": "adept",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Generates Adept URLs.",
   "keywords": ["adept", "image", "resizing", "graphics"],
   "bugs": {
