@@ -1,6 +1,6 @@
 ### Adept
 
-Genrates Adept URLs.
+A simple Node.js module that allows you to easily generate Adept URLs.
 
 #### Installation
 
@@ -9,7 +9,7 @@ Genrates Adept URLs.
 #### Usage
 
 ```js
-var adept = require('adept');
+var adept = require("adept");
 
 // Setup Adept settings
 var settings = {
@@ -21,11 +21,11 @@ var settings = {
 // Initialize Adept
 var a = adept(settings)
 
-// Setup params for image to modify
+// Setup params for the image to modify
 var params = {
     "bucket": "xxxxxxxxx",
-    "operations": ['maxwidth-100'],
-    "asset_key": 'xxxxxxxxxxxxxxxxxx.jpeg'
+    "operations": ["maxwidth-100"],
+    "asset_key": "xxxxxxxxxxxxxxxxxx.jpeg"
 };
 
 // Generate the Adept URL

@@ -3,7 +3,7 @@ var crypto = require('crypto')
 // Factory
 module.exports = function adept(settings) {
 
-    // checks if all params have been passed correctly
+    // check if all params have been passed correctly
     if (!settings.account_id) {
         return new Error("Please provide an 'account_id'");
     };
@@ -13,7 +13,7 @@ module.exports = function adept(settings) {
     };
 
     if (!settings.cloudfront_hostname) {
-        return new Error("Please provide an 'cloudfront_hostname'");
+        return new Error("Please provide a 'cloudfront_hostname'");
     };
 
     return new Adept(settings);
@@ -37,27 +37,27 @@ function joinOperations(params) {
 // Genrate Adept URL
 Adept.prototype.generateAdeptUrl = function(params) {
 
-    // checks if the asset key and S3 bucket params have been passed correctly
+    // check if the asset key and S3 bucket name params have been passed correctly
     if (!params.asset_key) {
-        return new Error("Please provide either an asset_key");
+        return new Error("Please provide an 'asset_key'");
     };
 
     if (!params.bucket) {
-        return new Error("You have to provide a S3 bucket name");
+        return new Error("You have to provide a S3 'bucket' name");
     };
 
     // join operations
     var operations_str = joinOperations(params);
 
-    // sets path
+    // set path
     var path = '/' + params.bucket + '/'+ params.asset_key + operations_str + '/' + this.account_id;
 
     // generate hex
     var hash_hex = crypto.createHmac('sha1', this.account_key).update(path).digest('hex');
 
-    // generates adept url
+    // generate adept url
     var adept_url = this.cloudfront_hostname + path + '/' + hash_hex;
 
-    // returns adept url
+    // return adept url
     return adept_url;
 };

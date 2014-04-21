@@ -1,7 +1,7 @@
 {
   "name": "adept",
-  "version": "0.0.5",
-  "description": "Generates Adept URLs.",
+  "version": "0.0.6",
+  "description": "A simple module that allows you to easily generate Adept URLs.",
   "keywords": ["adept", "image", "resizing", "graphics"],
   "bugs": {
         "url": "https://github.com/andreasb/adept/issues",
@@ -15,7 +15,7 @@
     "name": "Andreas Birkebæk",
     "email": "andreas@fictivekin.com"
   },
-  "respository": {
+  "repository": {
     "type": "git",
     "url": "https://github.com/andreasb/adept.git"
   },
